@@ -1,0 +1,45 @@
+{
+  "expenses": [
+
+    { "id": 1, 
+    "description": "Groceries", 
+    "amount": 300, 
+    "category": "Food" },
+
+
+    { "id": 2, 
+    "description": "Gasoline",
+     "amount": 3000, 
+     "category": "Transportation" },
+
+
+    { "id": 3,
+     "description": "Internet Bill",
+      "amount": 2000, 
+      "category": "Utilities" },
+
+
+    { "id": 4, 
+    "description": "School fees payment",
+    "amount":12000,
+    "category":"Children"},
+
+
+    { "id": 5, 
+    "description": "House rent",
+     "amount": 20500,
+     "category":"House keepng"},
+
+
+    { "id": 6,
+    "description": "Cerials",
+     "amount": 600,
+    "category":"Food"},
+    
+    { "id": 7, 
+    "description":"Electric bill",
+    "amount": 1220,
+    "category": "Utilities"}
+]
+    
+}
