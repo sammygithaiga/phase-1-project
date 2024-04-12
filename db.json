@@ -28,14 +28,14 @@
     { "id": 5, 
     "description": "House rent",
      "amount": 20500,
-     "category":"House keepng"},
+     "category":"Utilities"},
 
 
     { "id": 6,
     "description": "Cerials",
      "amount": 600,
     "category":"Food"},
-    
+
     { "id": 7, 
     "description":"Electric bill",
     "amount": 1220,

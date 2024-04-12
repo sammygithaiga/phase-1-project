@@ -1,41 +1,52 @@
-<html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
     <title>Expense Tracker</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- You can add custom CSS files here -->
+
+   
 </head>
-<body>
+<body class="body">
 
-<div class="container">
-    <h1 class="mt-5 mb-4">Expense Tracker</h1>
+<div class="container DOM cont">
+    <h1 class="mt-5 mb-4 cos">Expense Tracker</h1>
+    <div class="input-group mb-3 sis">
+        <input type="text" id="email-input" class="form-control DOM" placeholder="Enter email" aria-label="Enter email" aria-describedby="login-btn">
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button" id="login-btn">Login</button> 
+        </div>
+    </div>
 
-    <!-- Expense Form -->
-    <div class="card mb-4">
+    <div class="card mb-4 cont">
         <div class="card-body">
             <h2 class="card-title">Add Expense</h2>
             <form id="expense-form">
-                <div class="form-group">
+                <div class="form-group cont">
+                    <label for="amount">Amount (Ksh)</label>
+                    <input type="number" class="form-control" id="amount" placeholder="Enter amount" required>
+                </div>
+                <div class="form-group cont">
                     <label for="description">Description</label>
                     <input type="text" class="form-control" id="description" placeholder="Enter description" required>
                 </div>
-                <div class="form-group">
-                    <label for="amount">Amount ($)</label>
-                    <input type="number" class="form-control" id="amount" placeholder="Enter amount" required>
-                </div>
-                <div class="form-group">
+                
+                <div class="form-group cont">
                     <label for="category">Category</label>
                     <select class="form-control" id="category" required>
-                        <option value="">Select category</option>
+                        <option value="">Select Category</option>
                         <option value="Food">Food</option>
                         <option value="Transportation">Transportation</option>
                         <option value="Housing">Housing</option>
-                        <!-- Add more categories as needed -->
+                        <option value="Utilities">Utilities</option>
+                        <option value="Children">Children</option>
+                        <option value="House Maintanace">Maintanance</option>
+                        <option value="Uniform">Clothes</option>
                     </select>
                 </div>
-                <button type="submit" class="btn btn-primary">Add Expense</button>
+                <button type="submit"
+                 class="btn btn-primary">Add Expense</button>
             </form>
         </div>
     </div>
@@ -49,7 +60,18 @@
             </ul>
         </div>
     </div>
+    <div class="card ">
+        <div class="card-body">
+            <h2 class="card-title">Total Expenses</h2>
+            <p id="total-expenses">Ksh0.00</p>
+        </div>
+    </div>
 </div>
+</div>
+
+<button class="btn btn-primary search-button cont ">Search</button>
+
+ 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="./js/index.js"></script> <!-- JavaScript file for DOM manipulation -->
