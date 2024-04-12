@@ -178,15 +178,15 @@ $(document).ready(function() {
 
     
     $('#expense-form').submit(function(event) {
-        event.preventDefault(); // Prevent default form submission
+        event.preventDefault(); 
         
         const description = $('#description').val();
         const amount = $('#amount').val();
         const category = $('#category').val();
 
-        if (description && amount && category) { // Ensure all fields are filled
+        if (description && amount && category) { 
             addExpense(description, amount, category);
-            // Clear input fields after adding expense
+            
             $('#description').val('');
             $('#amount').val('');
             $('#category').val('');
