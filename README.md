@@ -18,7 +18,7 @@ Git
 
 
 # Live Link
-[Git](gh-pages link)
+https://sammygithaiga.github.io/phase-1-project/
 
 ## Technologies used
 HTML
@@ -38,7 +38,7 @@ This project is about an expense tracker that allows users to update ther expenc
 ## Setup
 >I have used a local API [http://localhost:8000/expenses](http://localhost:8000/expenses) to go about my project.
 >Ialso created HTML ,CSS,BD.JSON and JAVASCRIPT files whre I have writen my code.
->Ihave also taken my site live using the following link()
+>Ihave also taken my site live using the following link(https://sammygithaiga.github.io/phase-1-project/)
 
 ### WORK ALLIGNMENT
 >We start with idex.html which is linked to bootstrap and index.css for styling and also linked to index.js for manipulaton.
