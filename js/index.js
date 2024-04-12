@@ -205,4 +205,36 @@ $(document).ready(function() {
         let expenses = []; // Array to store expenses
 
     });
+
+      $(document).ready(function() {
+        
+        const correctPassword = "password123";
+
+        // Event listener for confirming password
+        $('#confirmPassword').click(function() {
+            const enteredPassword = $('#password').val();
+
+            if (enteredPassword === correctPassword) {
+                // Password is correct, show expenses
+                $('#passwordModal').modal('hide'); 
+                // TODO: Show expenses (implement your logic here)
+                alert("Access granted! You can now view your expenses.");
+            } else {
+                // Password is incorrect, show error message
+                alert("Incorrect password. Please try again.");
+            }
+        });
+    });
+    // Function to check if the user is logged in
+        function isLoggedIn() {
+            return sessionStorage.getItem('loggedIn') === 'true';
+            expenses.forEach(expense => {
+                const listItem = $('<li>').addClass('list-group-item').text(`${expense.description} - $${expense.amount.toFixed(2)}`);
+                expenseList.append(listItem);
+            });
+        };
+        
+  
+    
+        
        
